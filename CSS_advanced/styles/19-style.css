@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
 *,
 *::before,
 *::after {
@@ -226,27 +228,30 @@ template {
 }
 
 body {
-  color: var(--text-color);
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-base);
 }
 
-a[href] {
+body,
+a {
   color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+}
+
+a:link {
   text-decoration: none;
 }
 
-a[href]:visited {
+a:visited {
   font-style: italic;
 }
 
-a[href]:hover {
+a:hover {
   text-decoration: underline;
 }
 
-a[href]:active {
+a:active {
   background-color: var(--color-light-grey);
 }
 
@@ -327,7 +332,7 @@ a[href]:active {
   color: var(--nav-item-link-hover);
 }
 
-.row {
+ul.row {
   margin: 0;
   padding: 0;
   list-style: none;
